@@ -68,6 +68,18 @@
       opacity: 0.9;
     }
 
+    /* ----------- PROFILE PHOTO (WHITE BACKGROUND) ----------- */
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: white;      /* White background */
+      padding: 10px;          /* Spacing between image & background */
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
     /* ----------- SECTIONS ----------- */
     section {
       padding: 60px 20px;
@@ -132,7 +144,6 @@
       border-radius: 25px;
       font-size: 14px;
       transition: 0.3s;
-      cursor: default;
     }
     .skill:hover {
       background: #74b9ff;
@@ -151,9 +162,6 @@
       color: #0984e3;
       font-weight: bold;
       text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
     }
 
     /* ----------- FOOTER ----------- */
@@ -180,6 +188,7 @@
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav>
     <h1>Harshjeet</h1>
@@ -191,8 +200,9 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Image -->
   <div class="hero">
+    <img src="photo.png" alt="Harshjeet Photo" class="profile-pic">
     <h2>👋 Hi, I'm Harshjeet Girase</h2>
     <p>Data Science | Machine Learning | Analytics</p>
   </div>
@@ -213,12 +223,12 @@
       <div class="card">
         <h3>🛒 Recommendation System (NLP)</h3>
         <p>Recommendation engine using Natural Language Processing to suggest products.</p>
-        <a href="https://github.com/yourusername/recommendation-system" target="_blank">🔗 GitHub</a>
+        <a href="https://github.com/harshajeetgirase/Product-Recommendation-using-NLP" target="_blank">🔗 GitHub</a>
       </div>
       <div class="card">
         <h3>🚕 Uber Ride Analysis</h3>
         <p>Analyzed Uber rides dataset & created interactive dashboards in Power BI.</p>
-        <a href="https://github.com/yourusername/uber-analysis" target="_blank">🔗 GitHub</a>
+        <a href="https://github.com/harshajeetgirase/Uber-Ride-Analysis-PowerBi-Project" target="_blank">🔗 GitHub</a>
       </div>
       <div class="card">
         <h3>📊 Retail Sales Analysis</h3>
@@ -247,8 +257,8 @@
     <h2>Contact</h2>
     <div class="contact">
       <p>📧 Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-      <p>💻 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+      <p>💻 GitHub: <a href="#" target="_blank">github.com/yourusername</a></p>
+      <p>🔗 LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourusername</a></p>
     </div>
   </section>
 
@@ -256,5 +266,6 @@
   <footer>
     <p>© 2025 Harshjeet Girase | Portfolio Website</p>
   </footer>
+
 </body>
 </html>
